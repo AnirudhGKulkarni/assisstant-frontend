@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "https://assisstant-backend.onrender.com/api/ask"; 
+const API_URL = import.meta.env.VITE_BACKEND_URL + "/api/ask";
 
 export default function ChatBox() {
   const [messages, setMessages] = useState([]);
